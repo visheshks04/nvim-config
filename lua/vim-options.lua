@@ -8,6 +8,8 @@ vim.wo.number = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+vim.o.clipboard = "unnamedplus"
+
 vim.opt.guicursor = "i-ci-ve:hor30"
 vim.opt.laststatus=0
 
