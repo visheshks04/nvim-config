@@ -24,6 +24,8 @@ return {
     vim.keymap.set("n", "<C-p>", builtin.find_files, {})
     vim.keymap.set("n", "<C-f><C-f>", builtin.live_grep, {})
     vim.keymap.set("n", "<C-q>", builtin.help_tags, {})
+
+    -- git
     vim.keymap.set("n", "<leader>com", builtin.git_commits, {})
     vim.keymap.set("n", "<leader>bra", builtin.git_branches, {})
     vim.keymap.set("n", "<leader>sta", builtin.git_status, {})
