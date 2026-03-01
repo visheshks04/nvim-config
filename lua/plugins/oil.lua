@@ -17,6 +17,10 @@ return {
       win_options = {
         wrap = false, -- Disable line wrapping
       },
+      keymaps = {
+        ["<C-v>"] = { "actions.select", opts = { vertical = true } },
+        ["<C-x>"] = { "actions.select", opts = { horizontal = true } },
+      },
     })
     vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory with Oil" })
   end,

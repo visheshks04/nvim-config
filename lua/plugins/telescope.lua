@@ -30,5 +30,9 @@ return {
     vim.keymap.set("n", "<leader>bra", builtin.git_branches, {})
     vim.keymap.set("n", "<leader>sta", builtin.git_status, {})
     vim.keymap.set("n", "<leader>sh", builtin.git_stash, {})
+
+    --lsp
+    vim.keymap.set('n', '<leader>gd', builtin.lsp_definitions, {})
+    vim.keymap.set('n', '<leader>gr', builtin.lsp_references, {})
   end,
 }
