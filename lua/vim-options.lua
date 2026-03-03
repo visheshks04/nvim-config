@@ -12,6 +12,13 @@ vim.o.clipboard = "unnamedplus"
 
 vim.opt.guicursor = "i-ci-ve:hor30"
 vim.opt.laststatus=0
+vim.opt.wrap = true
+vim.opt.showmatch = true
+vim.opt.fillchars = {
+  vert = "│",
+  eob = " ",
+}
+vim.opt.winblend=50
 
 vim.api.nvim_set_keymap("n", "<Space>", "Nop", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<Space>", "Nop", { noremap = true, silent = true })
