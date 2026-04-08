@@ -32,8 +32,8 @@ return {
       require("mini.files").setup({
         -- Options you can set as per need
         windows = {
-          max_number = 1,
           preview = true,
+          width_preview = 40,
         },
       })
 

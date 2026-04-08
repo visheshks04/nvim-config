@@ -34,5 +34,8 @@ return {
     --lsp
     vim.keymap.set('n', '<leader>gd', builtin.lsp_definitions, {})
     vim.keymap.set('n', '<leader>gr', builtin.lsp_references, {})
+
+    -- keymap help
+    vim.keymap.set("n", "<leader>h", builtin.keymaps, {})
   end,
 }
