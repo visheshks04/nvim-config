@@ -19,6 +19,7 @@ vim.opt.fillchars = {
   eob = " ",
 }
 vim.opt.winblend=50
+vim.opt.termguicolors = true
 
 vim.api.nvim_set_keymap("n", "<Space>", "Nop", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<Space>", "Nop", { noremap = true, silent = true })

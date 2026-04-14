@@ -4,6 +4,13 @@ return {
 	priority = 1000,
 	config = function()
 		require("catppuccin").setup({
+			styles = {
+				comments = { "italic" },
+				conditionals = { "italic" },
+				loops = { "italic" },
+				keywords = { "italic" },
+				properties = { "italic" },
+			},
 			color_overrides = {
         mocha = { --these colors aren't exactly as they named, just hardcoded values that suited me
           rosewater = "#f5e0dc",
