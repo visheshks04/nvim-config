@@ -18,7 +18,7 @@ vim.opt.fillchars = {
   vert = "│",
   eob = " ",
 }
-vim.opt.winblend=50
+vim.opt.winblend=0
 vim.opt.termguicolors = true
 
 vim.api.nvim_set_keymap("n", "<Space>", "Nop", { noremap = true, silent = true })
