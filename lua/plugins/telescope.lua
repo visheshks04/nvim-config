@@ -17,6 +17,7 @@ return {
             preview_cutoff = 0,
           },
         },
+        border = false,
       },
     })
 

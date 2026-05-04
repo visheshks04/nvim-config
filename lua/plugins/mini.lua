@@ -26,21 +26,21 @@ return {
     end,
   },
   {
-    "echasnovski/mini.files",
-    version = "*",
-    config = function()
-      require("mini.files").setup({
-        -- Options you can set as per need
-        windows = {
-          preview = true,
-          width_preview = 40,
-        },
-      })
-
-      -- Keymap to toggle mini.files
-      vim.keymap.set("n", "<leader>e", function()
-        require("mini.files").open(vim.api.nvim_buf_get_name(0))
-      end, { desc = "Toggle Mini Files" })
-    end,
+    -- "echasnovski/mini.files",
+    -- version = "*",
+    -- config = function()
+    --   require("mini.files").setup({
+    --     -- Options you can set as per need
+    --     windows = {
+    --       preview = true,
+    --       width_preview = 40,
+    --     },
+    --   })
+    --
+    --   -- Keymap to toggle mini.files
+    --   vim.keymap.set("n", "<leader>e", function()
+    --     require("mini.files").open(vim.api.nvim_buf_get_name(0))
+    --   end, { desc = "Toggle Mini Files" })
+    -- end,
   },
 }
