@@ -21,6 +21,20 @@ vim.opt.fillchars = {
 vim.opt.winblend=0
 vim.opt.termguicolors = true
 
+local function set_transparent_bg()
+  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "none" })
+end
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = set_transparent_bg,
+})
+
+set_transparent_bg()
+
 vim.api.nvim_set_keymap("n", "<Space>", "Nop", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<Space>", "Nop", { noremap = true, silent = true })
 
